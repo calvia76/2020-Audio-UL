@@ -58,4 +58,8 @@ public class NPCController : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, aggroRange);
     }
+    public void FootSteps()
+    {
+
+    }
 }

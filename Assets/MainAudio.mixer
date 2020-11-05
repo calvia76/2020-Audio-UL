@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!245 &-1980419551990136639
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UnderWater
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 46890b01db2b3fb4fab650d13d3b58d2
+  m_FloatValues:
+    51a362474ff6e8046b82a5b594bfe13c: 1459
+  m_TransitionOverrides: {}
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MainAudio
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  - {fileID: -1980419551990136639}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - c59710085215468478f89285479b4b48
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: c59710085215468478f89285479b4b48
+  m_Children: []
+  m_Volume: 1f651cf7b0279e64c9c6105533b5d40a
+  m_Pitch: 60baa6638f97f744d8edd22c8ac094cb
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 24400004}
+  - {fileID: 8639292354938847429}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: bd89fa14fd901a24598cd0fe64fefefa
+  m_EffectName: Attenuation
+  m_MixLevel: 6a19c5b9233956a4dbc66180f6e30c50
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterIdle
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 5e45b79d0ed272f41a2d64fa55626145
+  m_FloatValues:
+    51a362474ff6e8046b82a5b594bfe13c: 22000
+    1f651cf7b0279e64c9c6105533b5d40a: 4.165108
+  m_TransitionOverrides: {}
+--- !u!244 &8639292354938847429
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: acf88bd8654e03b48bee61b53a280657
+  m_EffectName: Lowpass
+  m_MixLevel: 4dc86340da35e6641ad56386b3bbbcdb
+  m_Parameters:
+  - m_ParameterName: Cutoff freq
+    m_GUID: 51a362474ff6e8046b82a5b594bfe13c
+  - m_ParameterName: Resonance
+    m_GUID: d2c2867642ad66f428b6783cf619f2aa
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
